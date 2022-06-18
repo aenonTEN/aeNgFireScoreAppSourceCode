@@ -26,7 +26,7 @@
     </ng-container>
   
     <tr mat-header-row *matHeaderRowDef="displayedColumns" ></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;" [hidden]="row.score !<=90 || row.age!>=21"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" [hidden]="row.score !<=90"></tr>
   
     Row shown when there is no matching data. 
      <tr class="mat-row" *matNoDataRow>
